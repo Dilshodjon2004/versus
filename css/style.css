@@ -1,0 +1,240 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Navbar section */
+nav {
+    background-image: url("../img/IMAGE.png");
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 48px;
+}
+
+.navbar h2 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.nav-items {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.nav-item {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #999999;
+    margin-right: 40px;
+}
+
+.nav-items:last-child {
+    margin-right: 70px;
+}
+
+.active {
+    color: #00D6B4;
+}
+
+.navbar i{
+    font-size: 20px;
+    color: #00D6B4;
+    display: none;
+    margin-right: 30px;
+}
+
+/* hero section */
+.hero-texts {
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.hero-texts h1 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    color: #FFFFFF;
+    margin-top: 153px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: #00D6B4;;
+    text-decoration: none;
+    padding: 10px 25px;
+    border: 1px solid #00D6B4;
+    border-radius: 3px;
+}
+
+/* works section */
+
+.works {
+    background: #222;
+    padding: 50px 0 136px;
+}
+
+.section-title {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 33px;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    row-gap: 22px;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+footer {
+    background: #222;
+    text-align: center;
+    padding-bottom: 37px;
+}
+
+footer h3 {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #C2C2C2;
+
+}
+footer p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #999999;
+    margin-top: 10px;
+}
+
+@media only screen and (max-width: 1230px){
+    .navbar h2 {
+        margin-left: 25px;
+    }
+}
+
+@media only screen and (max-width: 1230px) {
+    .hero-texts {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .images {
+        grid-template-columns: repeat(2, 300px);
+    }    
+}
+@media only screen and (max-width: 900px){
+    .hero-texts {
+        width: 65%;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .images {
+        grid-template-columns: repeat(1, 300px);
+    }  
+}
+
+@media only screen and (max-width: 567px) {
+    .nav-items {
+        display: none;
+    }
+
+    .navbar i {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 538px) {
+    .hero-texts {
+        width: 80%;
+    }
+    .hero-texts h1 {
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 434px) {
+    .hero-texts {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 409px) {
+    .hero-texts {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 357px) {
+    .hero-texts h1 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 315px){
+    .images {
+        grid-template-columns: repeat(1, 275px);
+    } 
+    .images img {
+        width: 275px;
+    }
+
+    .hero-texts {
+        width: 95%;
+    }
+
+    .hero-texts h1 {
+        font-size: 30px;
+    }
+}
